@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- Using srcset / w + sizes -->
-    <h1>How it look on the street in Italy during lackdown?</h1>
-    <img
-      alt="a man on the street in Italy during the pandemic"
-      srcset="
-        marco-testi-2wDTGnYGqsE-unsplash.jpg  300w,
-        marco-testi-2wDTGnYGqsE-unsplash.jpg  600w,
-        marco-testi-2wDTGnYGqsE-unsplash.jpg 1200w,
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Using srcset / w + sizes -->
+  <h1>How it look on the street in Italy during lackdown?</h1>
+  <img alt="a man on the street in Italy during the pandemic" srcset="
+        WX20210105-122026.jpg.png 300w,
+        WX20210105-122118.jpg.png 600w,
+        WX20210105-122147.jpg.png 1200w,
         marco-testi-2wDTGnYGqsE-unsplash.jpg 2000w
-      "
-      sizes="70vmin"
-    />
-    <!-- TODO -->
-    <!-- Pictures are still too big -->
-    <picture>
-      <source
-        media="(min-width: 1000px)"
-        srcset="michael-marais-4xVo_PUCmb8-unsplash.jpg"
-      />
-      <source
-        media="(min-width: 600px)"
-        srcset="jenn-jpeg-i3IkIhoCV-Q-unsplash.jpg"
-      />
-      <img alt="" srcset="md-shazzadul-alam-FadtSkCL6VE-unsplash.jpg" />
-    </picture>
-  </body>
+      " sizes="70vmin" />
+  <!-- Pictures are still too big, because it's the same picture -->
+  <picture>
+    <source media="(min-width: 1000px)" srcset="michael-marais-4xVo_PUCmb8-unsplash.jpg" />
+    <source media="(min-width: 600px)" srcset="jenn-jpeg-i3IkIhoCV-Q-unsplash.jpg" />
+    <img alt="" srcset="md-shazzadul-alam-FadtSkCL6VE-unsplash.jpg" />
+  </picture>
+</body>
+
 </html>
